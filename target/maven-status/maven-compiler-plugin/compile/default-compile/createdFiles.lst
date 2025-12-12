@@ -1,0 +1,13 @@
+dev/trick/zonecontrolplus/managers/RegionManager.class
+dev/trick/zonecontrolplus/config/RegionConfig.class
+dev/trick/zonecontrolplus/listeners/BlockProtectionListener.class
+dev/trick/zonecontrolplus/listeners/EnderPearlListener.class
+dev/trick/zonecontrolplus/config/PotionConfig.class
+dev/trick/zonecontrolplus/managers/BorderDamageManager.class
+dev/trick/zonecontrolplus/config/ConfigManager.class
+dev/trick/ZoneControlPlus.class
+dev/trick/zonecontrolplus/managers/AutoHealManager.class
+dev/trick/ZoneControlPlus$1.class
+dev/trick/zonecontrolplus/listeners/ElytraListener.class
+dev/trick/zonecontrolplus/listeners/PotionControlListener.class
+dev/trick/zonecontrolplus/utils/MessageManager.class

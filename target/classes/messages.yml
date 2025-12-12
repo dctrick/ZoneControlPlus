@@ -1,0 +1,75 @@
+# ⚔ ZoneControlPlus Messages ⚔
+# All messages support MiniMessage format with gradients and symbols
+# symbols: ⚔ ✦ ✧ ✪ ⚡ ✨ ⛡ ⚠ ❌ ✅ 🛡 ⚗ 💀 💎 🔥 ❄
+plugin:
+  prefix: "<gradient:#ff3333:#ff8800>⚔ ZoneControlPlus ⚔</gradient>"
+  reload-success: "<gradient:#00ff88:#00ffaa>✅ Plugin configuration reloaded successfully!</gradient>"
+  reload-failed: "<gradient:#ff0000:#aa0000>❌ Failed to reload configuration! Check console for errors.</gradient>"
+  no-permission: "<gradient:#ff0000:#aa0000>❌ You don't have permission to use this command!</gradient>"
+  
+  help:
+    - "<gradient:#ff3333:#ff8800>⚔ ZoneControlPlus Help ⚔</gradient>"
+    - "<gradient:#66ccff:#3399ff>✦ /zcp reload</gradient> - <color:#ffffff>Reload plugin configuration</color>"
+    - "<gradient:#66ccff:#3399ff>✦ /zcp help</gradient> - <color:#ffffff>Show this help message</color>"
+
+# Block Protection Messages
+block-protection:
+  no-break: "<gradient:#ff0000:#ff8800>⚠ You cannot break <color:#ffff00><block></color> in this zone! ⚠</gradient>"
+  no-place: "<gradient:#ff0000:#ff8800>⚠ You cannot place <color:#ffff00><block></color> here! ⚠</gradient>"
+  no-interact: "<gradient:#ff3333:#ff6600>✦ You cannot interact with <color:#ffff00><block></color> in this combat zone! ✦</gradient>"
+
+# Ender Pearl Messages  
+pearl:
+  no-pearl: "<gradient:#ff3333:#ff6600>✦ Enderpearls are disabled in this region ✦</gradient>"
+  no-outpearl: "<gradient:#ff5555:#ff8800>⚔ You cannot throw pearls outside this battle zone! ⚔</gradient>"
+  pearl-blocked: "<gradient:#aa00ff:#ff00aa>✧ Your pearl was blocked by zone restrictions ✧</gradient>"
+
+# Border Damage Messages
+border:
+  damage-warning: "<gradient:#ff5555:#ff0000>⚔ You are taking damage for leaving this zone! Return immediately! ⚔</gradient>"
+  pushed-back: "<gradient:#ff8800:#ffaa00>⚡ You have been pushed back into the combat zone! ⚡</gradient>"
+  damage-tick: "<gradient:#ff0000:#cc0000>💀 <damage> damage for leaving the zone!</gradient>"
+
+# Potion Control Messages
+potion:
+  blocked-consume: "<gradient:#8800ff:#aa00ff>⚗ This potion is not allowed in this zone! ⚗</gradient>"
+  effect-cleared: "<gradient:#ff8800:#ffaa00>✨ Restricted effects have been cleared! ✨</gradient>"
+  effect-given: "<gradient:#00ff88:#00ffaa>✦ You have been given zone protection effects! ✦</gradient>"
+
+# Healing Messages
+healing:
+  heal-zone-enter: "<gradient:#00ff88:#00ffaa>✦ You feel your wounds healing inside this sanctuary ✦</gradient>"
+  heal-zone-exit: "<gradient:#ffaa00:#ff8800>⚡ You are no longer under the zone's protection ⚡</gradient>"
+  heal-tick: "<gradient:#00ff44:#00aa44>💎 +<hearts> ❤ restored</gradient>"
+  food-restored: "<gradient:#ffaa00:#ff8800>🍖 Hunger satisfied in this zone!</gradient>"
+
+# Region Messages
+region:
+  enter: "<gradient:#66ccff:#3399ff>✧ Entering zone: <color:#ffff00><region></color> ✧</gradient>"
+  exit: "<gradient:#ffaa00:#ff8800>⚡ Leaving zone: <color:#ffff00><region></color> ⚡</gradient>"
+  not-found: "<gradient:#ff0000:#aa0000>❌ Region '<region>' not found!</gradient>"
+
+# Combat Messages
+combat:
+  zone-active: "<gradient:#ff3333:#ff6600>⚔ <color:#ffff00><region></color> combat zone is now active! ⚔</gradient>"
+  zone-protection: "<gradient:#0088ff:#00aaff>🛡 You are protected in this zone 🛡</gradient>"
+  battle-warning: "<gradient:#ff0000:#ff4400>⚠ WARNING: Entering hostile combat zone! ⚠</gradient>"
+
+# Error Messages
+error:
+  worldguard-not-found: "<gradient:#ff0000:#aa0000>❌ WorldGuard plugin not found! ZoneControlPlus requires WorldGuard.</gradient>"
+  region-load-failed: "<gradient:#ff0000:#aa0000>❌ Failed to load region settings for '<region>'!</gradient>"
+  invalid-config: "<gradient:#ff0000:#aa0000>❌ Invalid configuration detected! Using defaults.</gradient>"
+
+# Success Messages
+success:
+  region-updated: "<gradient:#00ff88:#00ffaa>✅ Region '<region>' settings updated successfully!</gradient>"
+  flag-set: "<gradient:#00ff88:#00ffaa>✅ Flag '<flag>' set for region '<region>'!</gradient>"
+  flag-removed: "<gradient:#ffaa00:#ff8800>⚡ Flag '<flag>' removed from region '<region>'!</gradient>"
+
+# Debug Messages (only shown when debug is enabled)
+debug:
+  region-check: "<color:#888888>[DEBUG] Checking region for player <player>: <region></color>"
+  flag-triggered: "<color:#888888>[DEBUG] Flag '<flag>' triggered for <player> in <region></color>"
+  heal-tick: "<color:#888888>[DEBUG] Heal tick for <player>: +<amount> health</color>"
+  damage-tick: "<color:#888888>[DEBUG] Border damage for <player>: <damage> damage</color>"

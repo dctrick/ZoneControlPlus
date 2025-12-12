@@ -1,0 +1,89 @@
+settings:
+  region-check-interval: 10
+  debug: false
+  auto-heal-interval: 100
+  border-damage-interval: 20
+
+regions:
+  spawn:
+    undestroyable-blocks:
+      - BEDROCK
+      - OBSIDIAN
+      - BARRIER
+
+    unplaceable-blocks:    # Blocks that cannot be placed in this region
+      - TNT
+      - LAVA_BUCKET
+      - WATER_BUCKET
+      - FIRE_CHARGE
+      - FLINT_AND_STEEL
+
+    no-pearl: true     # Prevent ender pearl usage entirely
+    no-outpearl: true    # Prevent throwing pearls from inside to outside the region
+    elytra-disabled: false # Disable elytra usage in this region
+    
+    damage-on-exit:    # Damage players when they exit the region (if they try to leave)
+      enabled: true
+      damage-per-second: 2.0
+      push-back: true      # Push player back into region
+    # Control potion effects
+    potion-control:
+      blocked:      # Potions that are blocked from being consumed
+        - INVISIBILITY
+        - STRENGTH
+        - SPEED
+      # Auto-clear effects when entering region
+      clear-on-enter:
+        - INVISIBILITY
+        - WEAKNESS
+      # Give effects when entering region
+      give-on-enter:
+        RESISTANCE:
+          duration: -1  # Permanent while in region
+          amplifier: 1
+    
+    # Block interactions that are prevented
+    block-interactions:
+      - CHEST
+      - ANVIL
+      - CRAFTING_TABLE
+      - FURNACE
+      - ENCHANTING_TABLE
+      - BREWING_STAND
+    
+    # Auto-heal settings
+    auto-heal:
+      enabled: true
+      # Hearts to heal every 5 seconds (1 heart = 2 health points)
+      hearts-per-5s: 1
+      # Max health to heal to (20 = 10 hearts, -1 = player max)
+      max-health: -1
+      # Also restore food level
+      restore-food: true
+      # Food level to restore to
+      food-level: 20
+  
+  # Example PvP arena configuration
+
+# Default settings for regions not explicitly configured
+default-settings:
+  undestroyable-blocks: []
+  unplaceable-blocks: []
+  no-pearl: false
+  no-outpearl: false
+  elytra-disabled: false
+  damage-on-exit:
+    enabled: false
+    damage-per-second: 1.0
+    push-back: false
+  potion-control:
+    blocked: []
+    clear-on-enter: []
+    give-on-enter: {}
+  block-interactions: []
+  auto-heal:
+    enabled: false
+    hearts-per-5s: 0.5
+    max-health: -1
+    restore-food: false
+    food-level: 20

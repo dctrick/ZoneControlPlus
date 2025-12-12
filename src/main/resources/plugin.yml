@@ -1,0 +1,28 @@
+name: ZoneControlPlus
+version: '1.0-SNAPSHOT'
+main: dev.trick.ZoneControlPlus
+api-version: '1.21'
+depend: [WorldGuard]
+authors: [dc_trick]
+description: A stylish WorldGuard extension for PvP regions
+website: https://github.com/dctrick/ZoneControlPlus
+
+commands:
+  zonecontrolplus:
+    description: Main ZoneControlPlus command
+    usage: /<command> [reload|help]
+    aliases: [zcp, zonecontrol]
+
+permissions:
+  zonecontrolplus.*:
+    description: All ZoneControlPlus permissions
+    default: op
+    children:
+      zonecontrolplus.admin: true
+      zonecontrolplus.reload: true
+  zonecontrolplus.admin:
+    description: Access to admin features
+    default: op
+  zonecontrolplus.reload:
+    description: Reload plugin configuration
+    default: op
