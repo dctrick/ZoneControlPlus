@@ -1,4 +1,4 @@
-# \u2694 ZoneControlPlus Features
+#ZoneControlPlus Features
 
 ZoneControlPlus is a powerful region management plugin designed to enhance PvP and survival experiences using WorldGuard regions.
 
